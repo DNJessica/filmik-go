@@ -232,7 +232,6 @@ class App extends React.Component {
                     refreshing={this.state.isFetching}
                     renderItem={this.renderFilms}
                     limit={5}
-                    sortBy={["vote_average", { key: "id", descending: true }]}
                     renderWhenEmpty={() => <div className="NoFilms"><span>Схожих фільмів не знайдено</span></div>}
                     display={{
                         grid: true,
@@ -246,7 +245,6 @@ class App extends React.Component {
                 list={this.state.popular ? this.state.data : this.state.favorites}
                 refreshing={this.state.isFetching}
                 renderItem={this.renderFilms}
-                sortBy={["vote_average", { key: "id", descending: true }]}
                 renderWhenEmpty={() => <div></div>}
                 display={{
                     grid: true,

@@ -6,6 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install --save https://github.com/DNJessica/filmik-go`
+Downloads the app to folder YOUR_PATH/node_modules
+
+### `cd {YOUR_PATH}/node_modules/filmik-go`
+Directs you to the app folder
+
 ### `npm start`
 
 Runs the app in the development mode.\

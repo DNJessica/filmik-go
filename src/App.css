@@ -1,27 +1,24 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        height: 10vh;
+        margin-top: 5vh;
+        margin-left: 10vh;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
@@ -36,3 +33,395 @@
     transform: rotate(360deg);
   }
 }
+
+.App-background {
+    overflow-y: hidden;
+    height: 100vh;
+    background: linear-gradient(#211608 15%, #dba663 56.24%);
+    background-size: 400% 400%;
+}
+
+.Filmik {
+    font-size: calc(16px + 2vmin);
+    color: #fff200;
+    margin-left: 5vh;
+    margin-top: -2vh
+}
+
+.TitleSpan {
+    align-self: center
+}
+.Finder {
+    align-self: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 5vh;
+    width: 60vh;
+    font-size: 18px;
+    color: #4d3b25;
+    outline: none;
+    box-shadow: none;
+}
+
+.clArrow {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #4d3b25;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.Value {
+    text-decoration: underline;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #4d3b25;
+    font-weight: 600;
+    cursor: default;
+}
+
+.Arrow {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #474747;
+    font-weight: 400;
+    cursor: default;
+}
+
+.Pages {
+    margin-top: 10px;
+    background-color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input.Finder:focus {
+    outline: none !important;
+}
+
+input.Finder::placeholder {
+    color: #4d3b25;
+}
+.Find {
+    margin-top: -15vh;
+    text-align: center;
+}
+.Form {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: 10%;
+    height: 80vh;
+    flex: 1;
+    width: 80%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-size: 80%, 80%;
+    border-radius: 10px;
+    margin-top: 16vh;
+    align-self: center;
+}
+
+.Descr{
+    margin-top: -460px;
+    margin-left: 315px;
+    height: 460px;
+    text-align: start;
+}
+
+
+
+.DescrV {
+    margin-top: -475px;
+    margin-left: 455px;
+    height: 475px;
+    text-align: start;
+}
+
+.description {
+    cursor: default;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d3b25;
+}
+
+.description2 {
+    cursor: default;
+    margin-top: -355px;
+    margin-left: 355px;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d3b25;
+    text-align: start;
+}
+
+
+
+
+
+.descriptionValue {
+    cursor: default;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d3b25;
+}
+
+.FBut {
+    margin-left: 10px;
+    border-width: 0px;
+    height: 5vh;
+    width: 5vh;
+    background-color: #4d3b25;
+    opacity: 1;
+    color: #ffffff;
+
+}
+
+.FirstF {
+    margin-left: -74%;
+    margin-top: 5%;
+}
+
+.F {
+    margin-left: 6%;
+}
+
+.Poster {
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.Picture {
+    width: 300px;
+    height: 450px;
+    align-self: start;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+    .PictureImg {
+        width: 300px;
+        height: 450px;
+    }
+
+.oPoster {
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    margin-top: 30px;
+    opacity: 0.85;
+}
+
+
+.TextInForm {
+    margin-left: 40px;
+    text-align: left;
+    margin-top: 15px;
+}
+.TextInForm1 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.Active {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #4d3b25;
+    text-decoration: underline;
+}
+
+.inActive {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.FilmFrame {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    
+}
+
+.oFilmFrame {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    opacity: 0.85
+}
+
+.WHeart {
+    margin-top: 3px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.WHeart2 {
+    margin-top: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+
+
+
+.RHeart2 {
+    cursor: pointer;
+    height: 43px;
+    width: 43px;
+    align-self: center
+}
+
+.RHeart {
+    cursor: pointer;
+    height: 31px;
+    width: 31px;
+    align-self: center
+}
+
+.Star {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-left: 160px;
+    opacity: 1;
+    align-self: center
+}
+.Like{
+    margin-top: 0px;
+}
+
+.Like2 {
+    margin-top: -53px;
+    margin-left: 247px;
+}
+.VoteStar {
+    margin-top: -305px;
+}
+.Average{
+    margin-top: -35px;
+    margin-left: 160px;
+    font-weight: 600;
+}
+
+
+
+
+.FilmTitle {
+    font-size: 18px;
+    color: #4d3b25;
+}
+
+.FilmGenres {
+    font-size: 14px;
+    color: #4d3b25;
+  
+    
+}
+
+.Title {
+    text-align: center;
+    margin-top: 280px;
+    margin-bottom: 10px;
+}
+
+.TitleText {
+    cursor: default;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #211608;
+}
+
+.Fd{
+    margin-top:-90vh;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center
+}
+
+.Inp {
+    font-size: 28px;
+    color: #4d3b25;
+}
+
+.autocomplete-wrapper {
+    width: 80vh;
+    position: relative;
+    display: inline-block;
+    border-width: 5px;
+    border-color: aliceblue;
+    box-shadow: none;
+    outline: none;
+    font-size: 28px;
+    color: #4d3b25;
+}
+
+
+    .autocomplete-wrapper > div {
+        width: 100%;
+    }
+
+    .autocomplete-wrapper input {
+        border-radius: 20px;
+        border: none;
+        padding: 12px 15px;
+        font-size: 18px;
+        color: #4d3b25;
+        width: 100%;
+    }
+
+        .autocomplete-wrapper input:focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+    .autocomplete-wrapper .dropdown {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        max-height: 280px;
+        overflow: hidden;
+        overflow-y: auto;
+        background-color: #ffffff;
+        border: none;
+    }
+
+    .autocomplete-wrapper .item {
+        display: block;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+        .autocomplete-wrapper .item.selected-item {
+            background-color: #dba663;
+            color: #FAFBFC;
+            font-weight: 500;
+        }
+
+        .autocomplete-wrapper .item.itemText {
+            font-weight: 500;
+            color: #4d3b25;
+        }
+
+        .autocomplete-wrapper .item:hover {
+            background-color: #dba663;
+            color: #FAFBFC;
+            font-weight: 500;
+        }
+
+
+
+
+

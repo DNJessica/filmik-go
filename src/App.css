@@ -149,6 +149,7 @@ input.Finder::placeholder {
 .description2 {
     cursor: default;
     margin-top: -355px;
+    height: 355px;
     margin-left: 355px;
     margin-right: 40px;
     font-size: 16px;
@@ -157,6 +158,27 @@ input.Finder::placeholder {
     text-align: start;
 }
 
+.SimFilms {
+    cursor: default;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4d3b25;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.NoFilms {
+    cursor: default;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d3b25;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 
 

@@ -29,7 +29,8 @@ class App extends React.Component {
             over: 1,
             val: '',
             founds: [],
-            genres:[],
+            genres: [],
+            similar: [],
         }
 
     }
@@ -77,10 +78,12 @@ class App extends React.Component {
             fav: false
         })
 
-        let ep = 'https://api.themoviedb.org/3/movie/' + text.id + '/videos?api_key=48c5285ea2a448984c23e818f1beece2&language=uk'
+        let ep = 'https://api.themoviedb.org/3/movie/' + text.id + '/recommendations?api_key=48c5285ea2a448984c23e818f1beece2&language=uk'
         axios.get(ep).then((response) => {
-            console.log(response)
-
+            console.log(response.data.results)
+            this.setState({
+                similar: response.data.results
+            })
         }).catch((err) => console.log(err))
         
     }
@@ -226,7 +229,7 @@ class App extends React.Component {
         if (this.state.detail) {
             let path = 'http://image.tmdb.org/t/p/w500' + this.state.film.poster_path
             console.log("1")
-            return <div><div className="TitleText"><span>{this.state.film.title}</span></div>
+            return <div><div><div className="TitleText"><span>{this.state.film.title}</span></div>
                 <div> <div className="Picture"> <img className="PictureImg" src={path} /><div className="Like2">{this.heartIcon2(this.state.film)}</div> </div><div className="Descr">
                     <div className="TextInForm1"><span className="description">Дата виходу:</span></div>
                     <div className="TextInForm1"><span className="description">Жанр:</span></div>
@@ -235,7 +238,18 @@ class App extends React.Component {
                         <div className="TextInForm"><span className="descriptionValue">{this.genresList(this.state.film.genre_ids)}</span></div>
                     </div>
                 </div ><div className="description2"><span >{this.state.film.overview}</span></div>
-                </div>
+            </div><div className="SimFilms"><span >Схожі фільми:</span></div>
+                <div><FlatList
+                    list={this.state.similar}
+                    refreshing={this.state.isFetching}
+                    renderItem={this.renderFilms}
+                    limit={6} 
+                    sortBy={["vote_average", { key: "id", descending: true }]}
+                    renderWhenEmpty={() => <div className="NoFilms"><span>Схожих фільмів не знайдено</span></div>}
+                    display={{
+                        grid: true,
+                    }}
+                /></div></div>
             
         }
         else {

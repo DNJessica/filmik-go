@@ -141,18 +141,6 @@ class App extends React.Component {
 
     count = 0;
 
-    people = [
-        { firstName: 'Elson', lastName: 'Correia', info: { age: 24 } },
-        { firstName: 'John', lastName: 'Doe', info: { age: 18 } },
-        { firstName: 'Jane', lastName: 'Doe', info: { age: 34 } },
-        { firstName: 'Maria', lastName: 'Carvalho', info: { age: 22 } },
-        { firstName: 'Kelly', lastName: 'Correia', info: { age: 23 } },
-        { firstName: 'Don', lastName: 'Quichote', info: { age: 39 } },
-        { firstName: 'Marcus', lastName: 'Correia', info: { age: 0 } },
-        { firstName: 'Bruno', lastName: 'Gonzales', info: { age: 25 } },
-        { firstName: 'Alonzo', lastName: 'Correia', info: { age: 44 } }
-    ]
-
     renderFilms = (film) => {
         this.count = this.count + 1;
         
@@ -243,7 +231,7 @@ class App extends React.Component {
                     list={this.state.similar}
                     refreshing={this.state.isFetching}
                     renderItem={this.renderFilms}
-                    limit={6} 
+                    limit={5}
                     sortBy={["vote_average", { key: "id", descending: true }]}
                     renderWhenEmpty={() => <div className="NoFilms"><span>Схожих фільмів не знайдено</span></div>}
                     display={{
@@ -326,7 +314,7 @@ class App extends React.Component {
                   
                   <form className="Form">
                       <div className="TextInForm"><span className={this.state.pop ? "Active" : "inActive"} onClick={() => this.Popular()}>Популярне</span>
-                          <span className={this.state.fav ? "Active" : "inActive"} onClick={() => this.Favorite()}>Fav</span></div>
+                          <span className={this.state.fav ? "Active" : "inActive"} onClick={() => this.Favorite()}>Улюблені</span></div>
                       {this.pages()}
                       {this.mainView()}
                       

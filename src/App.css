@@ -86,7 +86,7 @@
     margin-top: 10px;
     background-color: #e0e0e0;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 input.Finder:focus {
@@ -352,7 +352,7 @@ input.Finder:focus {
     color: #211608;
 }
 
-.Fd{
+.Search{
     margin-top:-90vh;
     text-align: center;
     align-content: center;
